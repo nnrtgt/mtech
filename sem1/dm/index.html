@@ -559,7 +559,154 @@
 
   <h1>Data Mining</h1>
 
-
+<p>What is Data Mining?
+Data is everywhere</p>
+<p>Data mining is the process of automatically discovering useful information in large data repositories.  Find novel and useful patterns that might otherwise remain unknown. Data Mining also predicts the outcome of a future observation. </p>
+<p>KDD - Knowledge Discovery in Databases
+Data mining is an integral part of knowledge discovery in databases, overall process of converting raw data into useful information.</p>
+<p>Input Data → Data Preprocessing → Data Mining → PostProcessing → Information</p>
+<p>Preprocessing include:</p>
+<ul>
+<li>Feature selection</li>
+<li>Dimensionality Reduction</li>
+<li>Normalization</li>
+<li>Data Subsetting</li>
+</ul>
+<p>Postprocessing include:</p>
+<ul>
+<li>Filtering Patterns</li>
+<li>Visualization</li>
+<li>Pattern Interpretation</li>
+</ul>
+<p>Employee Age and ID – These two attributes associated with an employee, both represented by as integers.  We can talk about the average age of an employee but no average of employee ID.  age have a maximum, while integers do not.</p>
+<p>Measurement scale of Centimeters vs Inches, we use the same number, but length is different when measured in Centimeters vs Inches.</p>
+<p>Properties/Operations of numbers are typically used to describe attributes:</p>
+<ol>
+<li>Distinctness = and &lt;&gt; (not equal to)</li>
+<li>Order &lt;, &lt;=, &gt;, &gt;=</li>
+<li>Addition + and –</li>
+<li>Multiplication * and /</li>
+</ol>
+<p>Four types of Attributes:</p>
+<ol>
+<li>Nominal</li>
+<li>Ordinal</li>
+<li>Interval </li>
+<li>Ratio</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+<th>Examples</th>
+<th>Operations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Categorical (Qualitative)</td>
+<td>Nominal</td>
+<td>The values of a nominal attribute are just different names, these provide only enough information to distinguish one object from another (=, &lt;&gt; - Not equal to)</td>
+<td>Zip codes, employee ID, eye color, gender</td>
+<td>Mode, entropy, correlation, chi-square test</td>
+</tr>
+<tr>
+<td>Categorical (Qualitative)</td>
+<td>Ordinal</td>
+<td>The values of an ordinal attribute provide enough information to order objects (&lt;, &gt;)</td>
+<td>Grades (A+, A, A-, B+, B, B-), T-Shirt Size (XL, L, M, S)</td>
+<td>Median, Percentiles, Rank correlation, run tests, Sign tests</td>
+</tr>
+<tr>
+<td>Numeric (Quantitative)</td>
+<td>Interval</td>
+<td>For Interval attributes, the difference between values is meaningful, i.e., a unit of measurement exists. (+, -)</td>
+<td>Calendar dates, time, temperature in Celsius or Fahrenheit</td>
+<td>Mean, Standard deviation, Pearson’s correlation, t and F tests</td>
+</tr>
+<tr>
+<td>Numeric (Quantitative)</td>
+<td>Ratio</td>
+<td>For ratio variables, both differences and ratios are meaningful (*, /)</td>
+<td>Temperature in Kelvin, monetary quantities, counts, age, mass, length, electrical current</td>
+<td>Geometric mean, harmonic mean, precent, variation</td>
+</tr>
+</tbody>
+</table>
+<p>Permissible Transformations:</p>
+<ul>
+<li>The types of attributes can also be described in terms of transformations that do not change the meaning of an attribute.  </li>
+<li>For example, the meaning of a length attribute is unchanged if it is measured in meters instead of feet</li>
+</ul>
+<p>Describing Attributes by the Number of Values:</p>
+<ul>
+<li>Discrete - finite, Binary attributes (Yes,No) – Boolean</li>
+<li>Continuous – A continuous attribute is one whose values are real numbers</li>
+</ul>
+<p>Asymmetric Attributes: Presence of a non-zero attribute value is regarded as important.  </p>
+<p>Cyclical – Time, GPS</p>
+<p>Dimensionality, Distribution and Resolution:</p>
+<p>The <strong>Dimensionality</strong> of a data set is the number of attributes that the object in the data set possess.  </p>
+<p><strong>Distribution</strong> – The distribution of a data set is the frequency of occurrence of various values or sets of values for the attributes comprising data objects.  Distribution of a data set can be considered as a description of the concentration of objects in various regions of the data space.  Normal (Guassian), skewness. In the distribution can make the classification difficult.</p>
+<p>Sparsity (of asymmetric attribute)– special case of skewed data.  It is an advantage because usually only the non-zero values need to be stored and manipulated.  </p>
+<p><strong>Resolution</strong> – The patterns in the data also depend on the level of resolution. If the resolution is too fine, a pattern may not be visible or may be buried in noise; if the resolution is too coarse, the pattern may disappear.  </p>
+<p>Types of Data Sets:</p>
+<ul>
+<li>Record Data</li>
+<li>Transaction or Market Basket Data</li>
+<li>The Data Matrix </li>
+<li>Ordered Data</li>
+<li>Graph Based Data</li>
+<li>Sequential Transaction Data</li>
+<li>Spatial and Spatio-Temporal Data (weather data, spatial autocorrelation)</li>
+<li>Sequence Data – DNA </li>
+<li>Time Series Data</li>
+<li>Non Record Data</li>
+</ul>
+<p>Spatial autocorrelation : Objects that are physically close tend to be similar in other ways as well.  Analogous to Temporal autocorrelation.  </p>
+<p><strong>Data Quality</strong></p>
+<p>Data Cleaning: Detection and correction of data quality problems</p>
+<ul>
+<li>Inconsistencies</li>
+<li>Human errors</li>
+<li>Limitation of measuring devices</li>
+<li>Flaws in data collection process</li>
+<li>Missing Values</li>
+</ul>
+<p>Measurement and Data Collection Errors:</p>
+<p>Noise - Noise is the random component of a measurement error.</p>
+<p>Precision, Bias and Accuracy:</p>
+<ul>
+<li>
+<p>Precision – The closeness of repeated measurements to one another, often measured by standard deviation of a set of values</p>
+</li>
+<li>
+<p>Bias – A systematic variation of measurements from the quantity being measured, by taking the difference between the mean of the set of values and the known value of the quantity being measured</p>
+</li>
+<li>
+<p>Accuracy – The closeness of measurements to the true value of the quantity </p>
+</li>
+<li>
+<p>Outliers: data objects have characteristics that are different from most of the other data objects in the dataset.  Unusual with respect to typical values for the attribute.  Also known as anomalous objects or values (anamoly detection)</p>
+</li>
+<li>
+<p>Missing Values</p>
+</li>
+</ul>
+<p>Dimensionality Reduction - PCA, SVD</p>
+<p>Feature Selection </p>
+<p>Measures of Similarity and Dissimilarity </p>
+<p>Similarity and dissimilarity are important because they are used by a number of data mining techniques, such as clustering, nearest neighbor classification and anamoly detection</p>
+<p>The initial dataset is not needed once the similarities or dissimilarities have been computed.  </p>
+<p>Proximity is used to refer to either similarity and dissimilarity.  </p>
+<p>Jaccard and Cosine similarity measures are used for sparse data, such as documents, as well as correlation.</p>
+<p>Euclidean distance is used for non-sparse dense data.</p>
+<p>Mutual information can be applied to many types of data and is good for detecting Non linear relationships.</p>
+<p>Distances</p>
+<p>FOIL - First order Inductive Learner
+FOIL Gain </p>
 
 
 

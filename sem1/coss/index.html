@@ -559,7 +559,39 @@
 
   <h1>Computer Organization and Operating Systems</h1>
 
-
+<p><a href="https://boonsuen.com/process-scheduling-solver">Process Scheduling Solver</a></p>
+<p>Compiler Optimization 
+transform given program to an equivalent that uses fewer resources
+* minimizing the program execution time
+* minimize the memory use
+* minimize the power consumed by a program</p>
+<p>4 numeric levels - 2 bits</p>
+<p>00 - no optimization, fastest compilation time
+01 - basic optimization
+02 - some optimizatin, dead code eliminatin, loop nest optimization, global register allocation, global optimization within a function scope
+03 - may slow down the performances in some cases, optimizes loop nests, inverts indices, function inlining</p>
+<p>Machine independent
+* Constant propagation (substitute values of known constants at compile time)
+* Constant folding (process of recognizing and valuating constant expression at compile time)
+* Common Sub expression elimination (try to compute a given expression once, assuming the variables have not been modified)
+* Dead Code Elimination (remove the code that does not affect the program results)
+* Loop invariant code motion (recognizes computations within a loop that produce the same result each time the loop is executed, move the code outside the loop)
+* function in lining (eliminates call/return overhead, can decrease if small procedure body and few calls)
+Machine dependent
+* Instruction Scheduling
+* Loop unrolling(transformation technique)
+* Parallel unrolling </p>
+<p>Preserve Correctness
+Improve performance
+Worth the effort</p>
+<p>Execution time = number of instructions * CPI</p>
+<p>asymptomatic 
+Big O savings are better </p>
+<p>Role of the Programmer
+* Readable code &amp; Maintainable (Proecedures, Recursion etc)
+* Select the best algorithm
+* Focus on the inner loops
+* Eliminate optimization blockers</p>
 
 
 

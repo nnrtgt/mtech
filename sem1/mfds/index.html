@@ -561,7 +561,50 @@
 
 <p><a href="resources/">Math Resources</a></p>
 <p>Important Concepts learnt:</p>
-<p>eigenvalues and eigenvectors</p>
+<p>Session 0: </p>
+<ul>
+<li>Matrices - rectangular array of numbers or functions</li>
+<li>Vectors - Only one row or column</li>
+<li>Operations on Matrices</li>
+<li>Multiplication 
+    A (mxn) B(nxp) if we multiply we get C(mxp)
+    Matrix Multiplication is not commutative AB &lt;&gt; BA</li>
+<li>Matrix Transpose</li>
+<li>Special Matrices
+    Symmetric a(ij) = a(ji)
+    Skew Symmetric: a(ij) = -a(ji)
+    Triangular- 
+        Upper Traingular -&gt; a(ij) = 0 for all i &gt; j
+        Lower Traingular -&gt; a(ij) = 0 for all i &lt; j
+    Diagonal Matrix: a(ij) = 0 for all i &lt;&gt; j
+    Sparse Matrix: Many zeroes and few non-zero entities (Assymetric)
+    Orthogonal matrix: Transpose (A) = Inverse(A)</li>
+<li>Elementary Row operations
+    Interchange of rows
+    Addition of a constant multiple of one row to another row
+    Multiplication of a row by a nonzero constant c
+    <em>These operations are for rows only, not for columns</em></li>
+<li>
+<p>Row Echelon Form (REF)
+    Any rows of all zeroes are below any other non zero rows
+    Each leading entry of a row is in a column to the right of the leading entry of the row above it.
+    All Entries in a column below a leading entry are zeros</p>
+</li>
+<li>
+<p>Row Reduced Echelon Form (RREF)
+    Row Echelon Form and additionally, 
+        the leading entry in each row is 1, 
+        Each leading 1 is the onlly non zero entry in its column</p>
+</li>
+</ul>
+<p>When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$</p>
+<p>rank nullity theorem </p>
+<p>QR decomposition
+single value decomposition
+second derivative test
+ordinal and partial derivative functions
+eigenvalues and eigenvectors</p>
 <p>equation of the form 
 A.x = λx</p>
 <p>A is square matrix and λ is a number (scalar).  </p>
