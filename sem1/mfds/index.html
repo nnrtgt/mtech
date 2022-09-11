@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#session-0" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -326,9 +331,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Math Foundations for Data Science
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Math Foundations for Data Science
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-0" class="md-nav__link">
+    Session 0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-1" class="md-nav__link">
+    Session 1
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -545,6 +586,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-0" class="md-nav__link">
+    Session 0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-1" class="md-nav__link">
+    Session 1
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -560,8 +623,8 @@
   <h1>Math Foundations for Data Science</h1>
 
 <p><a href="resources/">Math Resources</a></p>
-<p>Important Concepts learnt:</p>
-<p>Session 0: </p>
+<p>Session-wise Important Concepts learnt </p>
+<h3 id="session-0">Session 0</h3>
 <ul>
 <li>Matrices - rectangular array of numbers or functions</li>
 <li>Vectors - Only one row or column</li>
@@ -570,35 +633,56 @@
     A (mxn) B(nxp) if we multiply we get C(mxp)
     Matrix Multiplication is not commutative AB &lt;&gt; BA</li>
 <li>Matrix Transpose</li>
-<li>Special Matrices
-    Symmetric a(ij) = a(ji)
-    Skew Symmetric: a(ij) = -a(ji)
-    Triangular- 
-        Upper Traingular -&gt; a(ij) = 0 for all i &gt; j
-        Lower Traingular -&gt; a(ij) = 0 for all i &lt; j
-    Diagonal Matrix: a(ij) = 0 for all i &lt;&gt; j
-    Sparse Matrix: Many zeroes and few non-zero entities (Assymetric)
-    Orthogonal matrix: Transpose (A) = Inverse(A)</li>
+<li>Special Matrices<ul>
+<li>Symmetric <span class="arithmatex">\(a_{ij} = a_{ji}\)</span></li>
+<li>Skew Symmetric: <span class="arithmatex">\(a_{ij} = -a_{ji}\)</span></li>
+<li>Triangular Matrices<ul>
+<li>Upper Traingular Matrix -&gt; <span class="arithmatex">\(a_{ij}\)</span> = 0 for all i &gt; j</li>
+<li>Lower Traingular Matrix -&gt; <span class="arithmatex">\(a_{ij}\)</span> = 0 for all i &lt; j</li>
+</ul>
+</li>
+<li>Diagonal Matrix: <span class="arithmatex">\(a_{ij}\)</span> = 0 for all i &lt;&gt; j</li>
+<li>Sparse Matrix: Many zeroes and few non-zero entities (Assymetric)</li>
+<li>Orthogonal matrix: Transpose (A) = Inverse(A)</li>
+</ul>
+</li>
 <li>Elementary Row operations
     Interchange of rows
     Addition of a constant multiple of one row to another row
     Multiplication of a row by a nonzero constant c
     <em>These operations are for rows only, not for columns</em></li>
-<li>
-<p>Row Echelon Form (REF)
-    Any rows of all zeroes are below any other non zero rows
-    Each leading entry of a row is in a column to the right of the leading entry of the row above it.
-    All Entries in a column below a leading entry are zeros</p>
+<li>Row Echelon Form (REF)<ul>
+<li>Any rows of all zeroes are below any other non zero rows</li>
+<li>Each leading entry of a row is in a column to the right of the leading entry of the row above it.</li>
+<li>All Entries in a column below a leading entry are zeros</li>
+<li>Example
+<span class="arithmatex">\(\begin{bmatrix}3 &amp; 2 &amp; 0 &amp; 7 &amp; 9\\ 0 &amp; 4 &amp; 5 &amp; 10 &amp; 0 \\ 0 &amp; 0 &amp;0 &amp; -4 &amp; 1 \\0 &amp; 0 &amp; 0 &amp; 0 &amp;6 \\0 &amp; 0&amp; 0&amp; 0&amp;0 \end{bmatrix}\)</span></li>
+</ul>
 </li>
-<li>
-<p>Row Reduced Echelon Form (RREF)
-    Row Echelon Form and additionally, 
-        the leading entry in each row is 1, 
-        Each leading 1 is the onlly non zero entry in its column</p>
+<li>Row Reduced Echelon Form (RREF)<ul>
+<li>Row Echelon Form and additionally, <ul>
+<li>The leading entry in each row is 1, </li>
+<li>Each leading 1 is the onlly non zero entry in its column</li>
+<li>Example <span class="arithmatex">\(\begin{bmatrix}1 &amp; 0 &amp; 3 &amp; 0 &amp; 9\\ 0 &amp; 1 &amp; 4 &amp; 0 &amp; -6 \\ 0 &amp; 0 &amp;0 &amp; 1 &amp; 1 \\0 &amp; 0 &amp; 0 &amp; 0 &amp;0 \\0 &amp; 0&amp; 0&amp; 0&amp;0 \end{bmatrix}\)</span></li>
+</ul>
 </li>
 </ul>
-<p>When <span class="arithmatex">\(a \ne 0\)</span>, there are two solutions to <span class="arithmatex">\((ax^2 + bx + c = 0)\)</span> and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$</p>
+</li>
+<li>We can transform any matrix into a matrix in reduced echelon form by using elementary row operations</li>
+<li>Rank of a Matrix<ul>
+<li>The rank of a matrix A is the number of non-zero row in the RREF of A</li>
+<li>We call a matrix <span class="arithmatex">\(A_1\)</span> row-equalent to a matrix <span class="arithmatex">\(A_2\)</span> if <span class="arithmatex">\(A_1\)</span> can be obtained from <span class="arithmatex">\(A_2\)</span> by (finitely many!) elementary row operations</li>
+<li><em>Row-equivalent matrices have the same rank</em></li>
+</ul>
+</li>
+<li>Determinant of Rank<ul>
+<li>Minor</li>
+<li>Determinant of 2 x 2 submatrix is the minor of $_a{11}</li>
+<li><span class="arithmatex">\(m_{11} = \begin{vmatrix} a_{22} &amp; a_{23} \\ a_{32} &amp; a_{33}\end{vmatrix}\)</span></li>
+</ul>
+</li>
+</ul>
+<h3 id="session-1">Session 1</h3>
 <p>rank nullity theorem </p>
 <p>QR decomposition
 single value decomposition
