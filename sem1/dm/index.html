@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Notes and important concepts learnt during the first semester course Data Mining M Tech Data Science from BITS Pilani. for future reference. Text Book - Introduction to Data Mining, Tan, Steinbach, Karpantne, Kumar, Pearson - Second Edition">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -62,6 +64,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#similarity-and-dissimilarity-between-simple-attributes" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -340,9 +347,72 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Data Mining
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Data Mining
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#similarity-and-dissimilarity-between-simple-attributes" class="md-nav__link">
+    Similarity and Dissimilarity between Simple Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dissimilarities-between-data-objects" class="md-nav__link">
+    Dissimilarities between Data Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Dissimilarities between Data Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distances" class="md-nav__link">
+    Distances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confusion-matrix" class="md-nav__link">
+    Confusion Matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#association-rules-market-basket-transactions" class="md-nav__link">
+    Association Rules - Market Basket transactions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -545,6 +615,55 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#similarity-and-dissimilarity-between-simple-attributes" class="md-nav__link">
+    Similarity and Dissimilarity between Simple Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dissimilarities-between-data-objects" class="md-nav__link">
+    Dissimilarities between Data Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Dissimilarities between Data Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distances" class="md-nav__link">
+    Distances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confusion-matrix" class="md-nav__link">
+    Confusion Matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#association-rules-market-basket-transactions" class="md-nav__link">
+    Association Rules - Market Basket transactions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -559,8 +678,7 @@
 
   <h1>Data Mining</h1>
 
-<p>What is Data Mining?
-Data is everywhere</p>
+<p>Notes and important concepts learnt during the first semester course Data Mining M Tech Data Science from BITS Pilani. for future reference. Text Book - Introduction to Data Mining, Tan, Steinbach, Karpantne, Kumar, Pearson - Second Edition</p>
 <p>Data mining is the process of automatically discovering useful information in large data repositories.  Find novel and useful patterns that might otherwise remain unknown. Data Mining also predicts the outcome of a future observation. </p>
 <p>KDD - Knowledge Discovery in Databases
 Data mining is an integral part of knowledge discovery in databases, overall process of converting raw data into useful information.</p>
@@ -692,21 +810,104 @@ Data mining is an integral part of knowledge discovery in databases, overall pro
 <p>Outliers: data objects have characteristics that are different from most of the other data objects in the dataset.  Unusual with respect to typical values for the attribute.  Also known as anomalous objects or values (anamoly detection)</p>
 </li>
 <li>
+<p>Support </p>
+</li>
+<li>
+<p>Confidence</p>
+</li>
+<li>
+<p>Lift</p>
+</li>
+<li>
 <p>Missing Values</p>
 </li>
 </ul>
 <p>Dimensionality Reduction - PCA, SVD</p>
 <p>Feature Selection </p>
-<p>Measures of Similarity and Dissimilarity </p>
+<p>Measures of Similarity and Dissimilarity:</p>
+<ul>
+<li>
 <p>Similarity and dissimilarity are important because they are used by a number of data mining techniques, such as clustering, nearest neighbor classification and anamoly detection</p>
-<p>The initial dataset is not needed once the similarities or dissimilarities have been computed.  </p>
+</li>
+<li>
+<p>In many cases, the initial dataset is not needed once the similarities or dissimilarities have been computed.  </p>
+</li>
+<li>
 <p>Proximity is used to refer to either similarity and dissimilarity.  </p>
+</li>
+<li>
 <p>Jaccard and Cosine similarity measures are used for sparse data, such as documents, as well as correlation.</p>
+</li>
+<li>
 <p>Euclidean distance is used for non-sparse dense data.</p>
+</li>
+<li>
 <p>Mutual information can be applied to many types of data and is good for detecting Non linear relationships.</p>
-<p>Distances</p>
-<p>FOIL - First order Inductive Learner
+</li>
+<li>Similarity between two objects is a numerical measure of the degree to which the two objects are alike.  </li>
+<li>Dissimilarity between two objects is a numerical measure of the degree to which the two objects are different.</li>
+<li>Frequently, the term distance is used as a synonym for dissimilarity (special class of dissimilarities)</li>
+<li>Transformations are often applied to convert a similarity to a dissimilarity or vice versa.</li>
+</ul>
+<h2 id="similarity-and-dissimilarity-between-simple-attributes">Similarity and Dissimilarity between Simple Attributes</h2>
+<h2 id="dissimilarities-between-data-objects">Dissimilarities between Data Objects</h2>
+<h3 id="distances">Distances</h3>
+<p><strong>Euclidean distance</strong> d, between two points x and y, in one-, two-, or higher dimensional space, is given by the following formula</p>
+<p><span class="arithmatex">\(d(x,y) = \sqrt{\displaystyle \sum_{k=1}^n(x_k - y_k)^2}\)</span></p>
+<p>Generalized form of Euclidean distance - <strong>Minkowski distance</strong></p>
+<p><span class="arithmatex">\(d(x,y) = { \left( {\displaystyle \sum_{k=1}^n|x_k - y_k|^2}\right)}^{1/r}\)</span></p>
+<p>where r is a parameter.  The following are the three most common examples of Minkowski Distances.</p>
+<ul>
+<li>
+<p>r = 1, <strong>Manhattan distance</strong>, taxicab, City Block, <strong><span class="arithmatex">\(L_1\)</span> norm</strong> distance.  <strong>Hamming distance</strong>, which is the number of bits that is different between two objects that have only binary attributes, i.e., between two binary vectors</p>
+</li>
+<li>
+<p>r = 2, Euclidean distance or <strong><span class="arithmatex">\(L_2\)</span> norm</strong></p>
+</li>
+<li>
+<p>r = <span class="arithmatex">\(\infty\)</span> <strong>Supremum distance</strong> or <strong><span class="arithmatex">\(L_{max}\)</span> or <span class="arithmatex">\(L_\infty\)</span> norm</strong></p>
+</li>
+</ul>
+<p><a href="https://github.com/nnrtgt/dma1/blob/main/Distances.ipynb">Python Code to do this using scipy distancematrix</a></p>
+<p><strong>r</strong> should not be confused with the number of dimensions <strong>n</strong></p>
+<p>Properties of Euclidean distance measure:</p>
+<ol>
+<li>Positivity:<br>
+a) d(x,y) &gt;= 0 for all x and y <br>
+b) d(x,y) = 0 only if x = y<br></li>
+<li>Symmetry: <br>
+d(x,y) = d(y,x) for all x and y </li>
+<li>Triangle Inequality <br>
+d(x,z) &lt;= d(x,y) + d(y,z) for all points x, y and z</li>
+</ol>
+<p>Measures that satisfy all three properties are known as <strong>"metrics"</strong></p>
+<p>The Triangle Inequality property be used while <strong>"clustering"</strong> technique</p>
+<p>For similarities the triangle inequality typically does not hold, but symmetry and positivity typically do.  </p>
+<p>Proximity Measure:</p>
+<p>Similarity Measures for Binary Data</p>
+<p>Similarity measures between objects that contain only binary attributes are called <strong>similarity coefficients</strong>, and typically have values between 0 and 1.  A value of 1 indicates that the two objects are completely similar, while a value of 0 indicates that the objects are not at all similar.</p>
+<p>Let x and y be two objects that consist of n binary attributes.  The comparision of two such objects</p>
+<h3 id="confusion-matrix">Confusion Matrix</h3>
+<h3 id="association-rules-market-basket-transactions">Association Rules - Market Basket transactions</h3>
+<p>An association rule is an implication expression of the form <span class="arithmatex">\(X \rightarrow Y\)</span>, where X and Y are disjoint itemsets.  i.e., <span class="arithmatex">\(X \cap Y = \emptyset\)</span></p>
+<p>The strength of an association rule can be measured in terms its support and confidence.</p>
+<p>Support determines how often a rule is applicable to a given data set, while confidence determines how frequently items in Y appear in transactions that contain X.  </p>
+<p>Support <span class="arithmatex">\(s(X \rightarrow Y\)</span>)</p>
+<p>Contingency Table</p>
+<p>Clustering</p>
+<p>HAC - 
+Single linkage - Single nearest
+Complete linkage - farthest Max
+Average linkage </p>
+<p>Dendrogram - Tree like structure </p>
+<p>Difference</p>
+<p>FOIL - First Order Inductive Learner
 FOIL Gain </p>
+<p>Local Outlier Factor https://towardsdatascience.com/local-outlier-factor-lof-algorithm-for-outlier-identification-8efb887d9843</p>
+<p>K Distance, K nearest neighbors </p>
+<p>K-distance is the distance between the point, and it’s Kᵗʰ nearest neighbor. K-neighbors denoted by Nₖ(A) includes a set of points that lie in or on the circle of radius K-distance. K-neighbors can be more than or equal to the value of K.</p>
+<p>Rechability Density</p>
+<p><span class="arithmatex">\(RD(X_i,X_j) = max(K - distance(X_j),distance(X_i,X_j) )\)</span></p>
 
 
 

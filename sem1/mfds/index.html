@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Notes and important concepts learnt during the first semester course Mathematics foundations for Data science, M Tech Data Science from BITS Pilani. Text Books referenced:">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -622,6 +624,7 @@
 
   <h1>Math Foundations for Data Science</h1>
 
+<p>Notes and important concepts learnt during the first semester course Mathematics foundations for Data science, M Tech Data Science from BITS Pilani. Text Books referenced:</p>
 <p><a href="resources/">Math Resources</a></p>
 <p>Session-wise Important Concepts learnt </p>
 <h3 id="session-0">Session 0</h3>
@@ -677,12 +680,56 @@
 </li>
 <li>Determinant of Rank<ul>
 <li>Minor</li>
-<li>Determinant of 2 x 2 submatrix is the minor of $_a{11}</li>
+<li>Determinant of 2 x 2 submatrix is the minor of <span class="arithmatex">\(a_{11}\)</span></li>
 <li><span class="arithmatex">\(m_{11} = \begin{vmatrix} a_{22} &amp; a_{23} \\ a_{32} &amp; a_{33}\end{vmatrix}\)</span></li>
+<li>Cofactor, The cofactor of an element <span class="arithmatex">\(C_{ij} = (-1)^{i+j} m_{ij}\)</span></li>
 </ul>
 </li>
 </ul>
 <h3 id="session-1">Session 1</h3>
+<p>Linear equations - Representation using Matrices</p>
+<p>Gauss Elimination ()</p>
+<p>Operations Count </p>
+<ul>
+<li>
+<p>In elimination procedure to get the rank we will make all elements below main diagonal zero. </p>
+</li>
+<li>
+<p>Multiplications and Additions required to determine the rank by elimination procedure are </p>
+</li>
+</ul>
+<p><span class="arithmatex">\(2\sum_{k=1}^{n-1}(n - k)(n-k+1) = O(n^3)\)</span></p>
+<ul>
+<li>Total number of divisions are</li>
+</ul>
+<p><span class="arithmatex">\(O(n^2)\)</span>
+* In back substitution total number of additions, multiplications and divisions are required are </p>
+<p><span class="arithmatex">\(\left( 2 \sum_{k=1}^n {(n-k)} \right) +n = O(n^2)\)</span></p>
+<p>? difference betweeen Singular and Non Singular Matrix</p>
+<p>condition number of a non-singular matrix is defined by
+<span class="arithmatex">\(K(A) = \|A\| \|A^{-1}\|\)</span></p>
+<p>conditional number of singular matrix is infinity</p>
+<p>cond(A) =  <span class="arithmatex">\(\infty\)</span>, if A is singular</p>
+<p>ill-conditioned and well-conditioned</p>
+<p>pivoting - partial pivoting</p>
+<p>LU Factorization</p>
+<p>We write square matrix A as 
+A = LU</p>
+<ul>
+<li>
+<p>Dolittle's Method : L is lower triangular matrix diag(L) = 1, <span class="arithmatex">\(l_{ii}=1\)</span> and U is the upper traingular matrix</p>
+</li>
+<li>
+<p>Crout's Method: U is the upper traingular matrix with diag(U) = 1, $u_{ii}=1 and L is lower triangular matrix</p>
+</li>
+<li>
+<p>Cholesky's method: U = L^T 
+  Decompose A such that <span class="arithmatex">\(A = U^TU\)</span></p>
+</li>
+</ul>
+<p>Number of Operations and Time to Compute of various methonds compared and Cholesky's method is proven to be most efficient </p>
+<p>Iterative Methods </p>
+<p>Diagonally Dominant Matrix </p>
 <p>rank nullity theorem </p>
 <p>QR decomposition
 single value decomposition
